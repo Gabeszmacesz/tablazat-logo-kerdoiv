@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rólunk</title>
+    <style>
+        section, fieldset {
+            margin: 10px;
+        }
+        label {
+         user-select: none;
+         cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rólunk</h1>
+    <a href="index.html">Vissza</a>
+    <a href="index.html#tanfolyamok">Tanfolyamok</a>
+    <a href="images/logo.png">Kép</a>
+
+    <form action="https://formspree.io/f/mrgrraea" method="POST">
+        <section>
+         <label>Vezetéknév:
+            <input 
+            type="text"
+            name="vezetéknév"
+            placeholder="Vezetéknév"
+            required
+          />
+         </label>
+        
+       </section>
+       <section>
+        <label>Keresztnév:
+            <input 
+          type="text"
+          name="keresztnév"
+          placeholder="Keresztnév"
+          disabled
+        />
+        </label>
+    </section>
+    <section>
+        <label>
+            Nehézségi szint:
+            <select name="nehézségi-szint">
+                <option value="0">Könnyű</option>
+                <option value="1">Közepes</option>
+                <option value="2">Nehéz</option>
+            </select>
+        </label>
+    </section>
+    <fieldset>
+        <legend>Válaszd ki a nehézségi szintet</legend>
+        <label>
+                <label><input type="radio" name="nehézségi-szint-radio" value="0">Könnyű</label>
+                <label><input type="radio" name="nehézségi-szint-radio" value="1">Közepes</label>
+                <label><input type="radio" name="nehézségi-szint-radio" value="2">Nehéz</label>
+        </label>
+    </fieldset>
+
+    <section>
+      <label>
+          <input type="checkbox" name="előétel" value="igen">
+          Előételt kérek
+      </label>
+        <label>
+            <input type="checkbox" name="desszert" value="igen">
+            Desszertet kérek
+        </label>
+    </section>
+
+
+
+      <section>
+          <label>
+              Üzenet:
+              <textarea name="üzenet">Kezdeti érték</textarea>
+          </label>
+      </section>
+
+      <section>
+          <label>
+              <input type="color" name="szín">
+              Kedvenc színed
+          </label>
+      </section>
+
+      <section>
+          <label>
+              <input type="date" name="dátum">
+              Mai nap
+          </label>
+      </section>
+
+      <section>
+          <label>
+              <input type="tel" name="telefonszám" value="+36">
+          </label>
+      </section>
+
+      <section>
+          <label>
+              <input type="file" name="file-kiválasztás" value="igen">
+          </label>
+      </section>
+
+      <section>
+          <label>
+              <input type="range" name="skála" value="0">
+          </label>
+      </section>
+     
+       <input type="submit" value="Beküldés" />
+    </form>
+</body>
+</html>

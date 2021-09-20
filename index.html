@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            background-color: #eee;
+            border-spacing: 0;
+        }
+        th, td {
+            border: 1px solid black;
+            margin: 0;
+            padding: 4px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="blog.html" target="_blank">Blog</a>
+    <a href="about.html">Rólunk</a>
+    <a href="mailto:belenyesig@freemail.hu">belenyesig@freemail.hu</a>
+    <a href="#alja">Alja</a>
+
+    <a href="#tanfolyamok">Tanfolyamok(belső hivatkozás)</a>
+    <h1 id="focim">Főcím</h1>
+
+    <img src="./logo/cropped-PK_logo_v3.0-1.png" alt="Programozas Karrier Logo">
+    
+    <h3>1.1Hármas cím</h3>
+    <ul>
+        <li><em>Dőlt</em></li>
+        <li><strong>Félkövér</strong></li>
+        <li>
+            Belső rendezetlen lista
+            <ul>
+                <li>Egyik pont</li>
+                <li>Másik pont</li>
+            </ul>
+        </li>
+    </ul>
+
+    <table id="tanfolyamok">
+        <caption>
+            1.1-es táblázat: Html és Css
+        </caption>
+        <thead>
+            <tr>
+                <th>Téma</th>
+                <th>Óraszám</th>
+                <th>Képzés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Html 5 dokumentumszerkesztés</td>
+                <td>2 óra</td>
+                <td rowspan="2">Html, Css</td>
+            </tr>
+            <tr>
+                <td>Css alapjai</td>
+                <td>4 óra</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="alja"><strong>Összesen</strong></td>
+                <td colspan="2">6 óra</td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+
+</html>
